@@ -126,11 +126,11 @@ const data = [
     articleDate.classList.add('date');
     articleButton.classList.add('expandButton', 'article-open');
 
-    // articleTitle.textContent = articleObject.data[0]
-    // articleDate.textContent = articleObject.data[1]
-    // firstParagraph.textContent = articleObject.data[2]
-    // secondParagraph.textContent = articleObject.data[3]
-    // thirdParagraph.textContent = articleObject.data[4]
+    // articleTitle.textContent = articleObject[0]
+    // articleDate.textContent = articleObject[1]
+    // firstParagraph.textContent = articleObject[2]
+    // secondParagraph.textContent = articleObject[3]
+    // thirdParagraph.textContent = articleObject[4]s
 
   /*Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.*/
@@ -150,3 +150,21 @@ const data = [
 
   /*Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.*/
+
+  data.push({
+    title: 'DOM vs NOde',
+    date: 'Oct 20th, 2019',
+    firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
+        hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
+        Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+        hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+        hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+        hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+        Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+        Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor`,
+  });
+  // console.log(data)
